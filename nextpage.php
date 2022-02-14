@@ -188,7 +188,7 @@ if (isset($_POST['submit'])) {
         });
         document.querySelector('#yes').addEventListener('click', function() {
             document.querySelector('.maindata').style = "opacity:1;"
-            window.location.href = "proj_home.php";
+            window.location.href = "index.php";
         });
         document.querySelector('.toform').addEventListener('Click', function() {
 
