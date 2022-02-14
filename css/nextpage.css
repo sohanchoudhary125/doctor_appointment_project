@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.maindata .nav {
+  position: sticky;
+  width: 100%;
+  height: 15vh;
+  background-color: rgb(20, 19, 19);
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 20px 50px rgba(32, 27, 30, 0.7);
+}
+
+.maindata .nav .company {
+  margin: 1vh 2vw;
+  display: flex;
+}
+
+.maindata .nav .company .logo {
+  width: 8vh;
+  height: auto;
+}
+
+.maindata .nav .company .dr {
+  margin-left: 2vw;
+  margin-top: 1vh;
+  font-size: 7vh;
+  color: #025ed6;
+}
+.maindata .nav .company .dr .care {
+  background: -webkit-linear-gradient(
+    right,
+    #56d8e4,
+    #9f01ea,
+    #56d8e4,
+    #9f01ea
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.maindata .nav .log {
+  margin-top: 4vh;
+  margin-right: 5vw;
+  font-size: 4vh;
+}
+.maindata .nav .log a {
+  text-decoration: none;
+  padding: 2vh 5vw;
+  color: white;
+}
+
+.maindata .nav .log .logout {
+  background-color: rgb(228, 15, 15);
+  border-radius: 50px;
+}
+
+.maindata .nameofuser {
+  position: relative;
+  margin: 3vh 3vw;
+  font-size: 3.5em;
+}
+.maindata form .sele {
+  margin-left: 3vw;
+  margin-top: -2vh;
+  font-size: 1.5em;
+}
+.maindata form .sele select {
+  font-size: 1em;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+.maindata form .sele .submit {
+  margin-left: 1vw;
+  border: none;
+  outline: none;
+  padding: 1vh 2vw;
+  background: linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0.884),
+    rgba(0, 12, 12, 0.856)
+  );
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.8em;
+  border-radius: 25px;
+}
+.optn {
+  display: none;
+  position: absolute;
+  width: 20vw;
+  height: 25vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000000;
+  border-radius: 25px;
+  box-shadow: 0 20px 50px rgba(32, 27, 30, 0.7);
+}
+.optn p {
+  margin: 4vh 3vw 1vh 3vw;
+  text-align: center;
+  font-size: 1.2em;
+  color: white;
+}
+.optn .btnout {
+  display: flex;
+  justify-content: space-between;
+  margin: 2vh 2vw;
+  border: none;
+}
+.optn .btnout button {
+  margin-top: 3vh;
+  width: 7vw;
+  padding: 1vh 2vw;
+  border: none;
+  color: white;
+  background: linear-gradient(
+    to right,
+    rgb(129, 208, 235),
+    rgb(89, 198, 235),
+    rgb(11, 121, 247)
+  );
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.maindata .cardcenter .card {
+  max-width: 300px;
+  width: 100%;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  box-shadow: 0 13px 10px -7px rgba(0, 0, 0, 0.5);
+  background: #fff;
+}
+
+.maindata .cardcenter .card__hover {
+  position: absolute;
+  padding: 16px;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.maindata .cardcenter {
+  position: relative;
+  margin-top: 3vh;
+  display: flex;
+  justify-content: center;
+}
+.maindata .cardcenter .card {
+  margin: 1vh 2vw;
+}
+.maindata .cardcenter .card .card__container {
+  display: flex;
+  height: 235px;
+}
+.maindata .cardcenter h1 {
+  margin-top: 10vh;
+}
+.maindata .cardcenter .card .card__img {
+  transition: 0.2s;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: absolute;
+  height: 235px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  top: 0;
+}
+
+.maindata .cardcenter .card .card__info {
+  background: #fff;
+  z-index: 2;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 15px 25px 25px 25px;
+}
+
+.maindata .cardcenter .card .card__category {
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #868686;
+}
+
+.maindata .cardcenter .card .card__title {
+  margin-top: 5px;
+  font-weight: 500;
+  color: #000;
+}
+
+.maindata .cardcenter .card .card__by {
+  font-size: 12px;
+  font-weight: 500;
+}
+.maindata .cardcenter .card .card__info .toform {
+  float: right;
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+  border: none;
+  background-color: red;
+  color: white;
+  padding: 1vh 1vw;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.maindata .cardcenter .card .card__info .toform:hover {
+  transform: scale(1.1);
+}
+.apoint {
+  position: absolute;
+  display: none;
+  top: 50vh;
+  width: 31vw;
+  margin-top: 2vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+  padding: 2vh 2vw;
+  overflow: hidden;
+  background-color: rgb(36, 35, 35);
+  color: white;
+}
+
+.apoint .appoint {
+  text-align: center;
+  margin-top: -2vh;
+  margin-bottom: 2vh;
+  margin-left: -2vw;
+  color: white;
+  padding: 2vh 0;
+  background-color: rgb(252, 44, 44);
+  width: 31vw;
+}
+.apoint p {
+  margin-bottom: 1vh;
+}
+.apoint p input,
+.apoint p select {
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-bottom: 1px solid white;
+  color: white;
+  margin-left: 1vh;
+}
+.apoint p select {
+  font-size: 1em;
+}
+.apoint p select option {
+  background: #868686;
+}
+.apoint p input[type="date"]::-webkit-calendar-picker-indicator {
+  background: url(https://mywildalberta.ca/images/GFX-MWA-Parks-Reservations.png)
+    no-repeat;
+}
+.apoint .btnout2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 1vh 2vw;
+  border: none;
+}
+.apoint .btnout2 button {
+  margin-top: 2vh;
+  width: 8vw;
+  padding: 1vh 2vw;
+  border: none;
+  color: white;
+  background: linear-gradient(
+    to right,
+    rgb(129, 208, 235),
+    rgb(89, 198, 235),
+    rgb(11, 121, 247)
+  );
+  border-radius: 25px;
+  cursor: pointer;
+}
+#data {
+  display: none;
+  position: absolute;
+  margin-top: 2vh;
+  left: 50vw;
+  top: 50vh;
+  transform: translate(-50%, -50%);
+  width: 35vw;
+  border-radius: 25px;
+  overflow: hidden;
+  background: linear-gradient(
+    45deg,
+    rgb(255, 49, 49),
+    rgb(255, 124, 2),
+    rgb(247, 201, 0)
+  );
+}
+#data h1 {
+  position: relative;
+  margin-top: 2vh;
+  text-align: center;
+  color: white;
+  font-size: 1.1em;
+}
+#data .contain {
+  width: 100%;
+  color: white;
+  height: auto;
+  padding: 1vh 1vw;
+  border-bottom: 1px solid white;
+}
+
+#data .contain .uper {
+  display: flex;
+  justify-content: space-between;
+}
+#data .contain p {
+  margin-top: 1vh;
+}
+#data .closetag {
+  width: 100%;
+  justify-content: center;
+  height: 10vh;
+}
+#data .closetag .closeit {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  padding: 1vh 2vw;
+  color: white;
+  font-size: 1.1em;
+  background: linear-gradient(
+    45deg,
+    rgb(22, 165, 22),
+    rgb(12, 180, 12),
+    rgb(9, 231, 9)
+  );
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.maindata .nav .log a:hover {
+  transform: scale(1.1);
+}
