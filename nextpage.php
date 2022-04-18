@@ -2,7 +2,7 @@
 session_start();
 $user = $_SESSION['user'];
 $pass = $_SESSION['pass'];
-$conn = mysqli_connect('localhost:3306', 'root', '', 'project');
+$conn = mysqli_connect('remotemysql.com', '2v6B9Eu4Wc', '926XBu3pHs', '2v6B9Eu4Wc');
 $query = "SELECT * from patient where username = '$user' and pass = '$pass' ";
 $query_run = mysqli_query($conn, $query);
 $data = mysqli_fetch_assoc($query_run);

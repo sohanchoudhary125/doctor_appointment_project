@@ -2,7 +2,7 @@
 session_start();
 if (isset($_POST['submit'])) {
 
-  $conn = mysqli_connect('localhost:3306', 'root', '', 'project');
+  $conn = mysqli_connect('remotemysql.com', '2v6B9Eu4Wc', '926XBu3pHs', '2v6B9Eu4Wc');
   $user = $_POST['user'];
   $pass = $_POST['pass'];
   $user = stripcslashes($user);

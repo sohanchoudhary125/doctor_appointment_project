@@ -3,7 +3,7 @@ session_start();
 
 if (isset($_POST['submit'])) {
 
-    $conn = mysqli_connect('localhost:3306', 'root', '', 'student') or die("Not able to connect");
+    $conn = mysqli_connect('remotemysql.com', '2v6B9Eu4Wc', '926XBu3pHs', '2v6B9Eu4Wc') or die("Not able to connect");
 
     $user = $_POST['user'];
     $pass = $_POST['pass'];
