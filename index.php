@@ -18,7 +18,7 @@ if (isset($_POST['submit'])) {
   mysqli_close($conn);
 }
 if (isset($_POST['submitnow'])) {
-  $conn = mysqli_connect('localhost:3306', 'root', '', 'project');
+  $conn = mysqli_connect('remotemysql.com', '2v6B9Eu4Wc', '926XBu3pHs', '2v6B9Eu4Wc');
   $user = $_POST['user'];
   $pass = $_POST['pass'];
   $fname = $_POST['fname'];
